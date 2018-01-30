@@ -1,0 +1,24 @@
+5000:
+error rate by word:      0.108258344342797 (4343 errors out of 40117)
+error rate by sentence:  0.8 (1360 errors out of 1700)
+10000:
+error rate by word:      0.0814367973676995 (3267 errors out of 40117)
+error rate by sentence:  0.749411764705882 (1274 errors out of 1700)
+15000:
+error rate by word:      0.0702943889124311 (2820 errors out of 40117)
+error rate by sentence:  0.727058823529412 (1236 errors out of 1700)
+20000:
+error rate by word:      0.0655831692300023 (2631 errors out of 40117)
+error rate by sentence:  0.703529411764706 (1196 errors out of 1700)
+25000:
+error rate by word:      0.0612707829598425 (2458 errors out of 40117)
+error rate by sentence:  0.69 (1173 errors out of 1700)
+30000:
+error rate by word:      0.0571827404840841 (2294 errors out of 40117)
+error rate by sentence:  0.667647058823529 (1135 errors out of 1700)
+35000:
+error rate by word:      0.0559862402472767 (2246 errors out of 40117)
+error rate by sentence:  0.659411764705882 (1121 errors out of 1700)
+40000:
+error rate by word:      0.0540917815389984 (2170 errors out of 40117)
+error rate by sentence:  0.655882352941176 (1115 errors out of 1700)
