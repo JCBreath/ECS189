@@ -36,12 +36,12 @@ with open(TAG_FILE) as tagFile, open(TOKEN_FILE) as tokenFile:
 				vocab[token]=1
 				token=OOV_WORD
 
-			if t==0:
-				if (prev_2, prev, tag) not in tri_transitions:
-					tri_transitions[(prev_2, prev, tag)]=0
 
-				tri_transitions[(prev_2, prev, tag)]+=1
-				prev_2 = prev
+			if (prev_2, prev, tag) not in tri_transitions:
+				tri_transitions[(prev_2, prev, tag)]=0
+
+			tri_transitions[(prev_2, prev, tag)]+=1
+			prev_2 = prev
 
 
 			if (tag, token) not in emissions:
@@ -58,8 +58,6 @@ with open(TAG_FILE) as tagFile, open(TOKEN_FILE) as tokenFile:
 
 			prev = tag
 
-			if t==1:
-				t = 0
 
 		if (prev_2, prev, FINAL_STATE) not in tri_transitions:
 			tri_transitions[(prev_2,prev,FINAL_STATE)]=0
@@ -72,15 +70,17 @@ with open(TAG_FILE) as tagFile, open(TOKEN_FILE) as tokenFile:
 		bi_transitions[(prev,FINAL_STATE)]+=1
 		transitionsTotal[prev]+=1
 
-'''
+
 for (prev, tag) in bi_transitions:
-	print "trans %s %s %s" % (prev, tag, float(bi_transitions[(prev, tag)]) / transitionsTotal[prev])
+	print "bi_trans %s %s %s" % (prev, tag, float(bi_transitions[(prev, tag)]) / transitionsTotal[prev])
 
-
-for (tag,token) in emissions:
-	print "emit %s %s %s " % (tag, token, float(emissions[(tag,token)]) / emissionsTotal[tag])
-'''
 
 for (prev_2, prev, tag) in tri_transitions:
 	print "trans %s %s %s %s" % (prev_2, prev, tag, float(tri_transitions[(prev_2, prev, tag)]) / bi_transitions[(prev, tag)])
+
+for (tag,token) in emissions:
+	print "emit %s %s %s " % (tag, token, float(emissions[(tag,token)]) / emissionsTotal[tag])
+
+
+
 
