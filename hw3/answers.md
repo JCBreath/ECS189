@@ -1,4 +1,4 @@
-#HW3 - Proabilistic ContextFree Grammar
+# HW3 - Proabilistic ContextFree Grammar
 
 ### Task 1
 This PCFG has two parameters: grammar that works as bigram transition probabilities, and lexicon that works as emission probabilities. 
