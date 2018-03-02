@@ -4,7 +4,13 @@
 Arthur is the king .
 `P(Arthur|Proper)=1/8`
 `P(is|VerbT)=1/6`
-
+P(the|Det)=1/9
+P(king|Noun)=1/21
+P(.|Misc)=1/183
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}. $$
+Parsing
+P(S2|ROOT)P(+Proper|S2)P(Proper +VerbT|+Proper)P(VerbT +Det|+VerbT)P(Det +Noun|+Det)P(Noun +Misc|+Noun)P(Misc|+Misc)
+=1*1/6*(1/7)^5
 
 Therefore, this PCFG implements a bigram language model. 
 
