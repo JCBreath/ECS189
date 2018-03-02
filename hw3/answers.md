@@ -2,7 +2,7 @@
 
 ### Task 1
 Arthur is the king .
-`$P(Arthur|Proper)=1/8$`
+`$$P(Arthur|Proper)=1/8$$`
 `P(is|VerbT)=1/6`
 
 
