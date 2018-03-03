@@ -1,7 +1,7 @@
 # HW3 - Proabilistic ContextFree Grammar
 
 ### Task 1
-For example, for sentence `Arthur is the king .` we have `P(T, S)=1*1/6*(1/7)^5*(1/8)*(1/6)*(1/9)*(1/21)*(1/183)`  
+For example, for sentence `Arthur is the king .` we have `P(T, S)=1*1/6*(1/7)^5*(1/8)*(1/6)*(1/9)*(1/21)*(1/183)=5.973*10^-12`  
 Sentence:
 ```
 P(Arthur|Proper)P(is|VerbT)P(the|Det)P(king|Noun)P(.|Misc) 
@@ -12,7 +12,7 @@ Parse:
 P(S2|ROOT)P(+Proper|S2)P(Proper +VerbT|+Proper)P(VerbT +Det|+VerbT)P(Det +Noun|+Det)P(Noun +Misc|+Noun)P(Misc|+Misc)
 = 1*1/6*(1/7)^5
 ```
-
+In the parsing part, PCFG uses bigram probabilities to predict probability of each parsing tree.
 Therefore, this PCFG implements a bigram language model. 
 
 ### Task 2
