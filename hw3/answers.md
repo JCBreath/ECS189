@@ -1,7 +1,7 @@
 # HW3 - Proabilistic ContextFree Grammar
 
 ### Task 1
-`Arthur is the king .`  =1/183 =1/183 
+`Arthur is the king .`  
 Sentence:
 ```
 P(Arthur|Proper)P(is|VerbT)P(the|Det)P(king|Noun)P(.|Misc) 
