@@ -1,7 +1,7 @@
 # HW3 - Proabilistic ContextFree Grammar
 
 ### Task 1
-For example, for sentence `Arthur is the king .` we have `P(T, S)=1*1/6*(1/7)^5*(1/8)*(1/6)*(1/9)*(1/21)*(1/183)`
+For example, for sentence `Arthur is the king .` we have `P(T, S)=1*1/6*(1/7)^5*(1/8)*(1/6)*(1/9)*(1/21)*(1/183)`  
 Sentence:
 ```
 P(Arthur|Proper)P(is|VerbT)P(the|Det)P(king|Noun)P(.|Misc) 
