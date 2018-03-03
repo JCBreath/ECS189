@@ -1,16 +1,16 @@
 # HW3 - Proabilistic ContextFree Grammar
 
 ### Task 1
-`Arthur is the king .`
+`Arthur is the king .`  =1/183 =1/183 
 Sentence:
 ```
 P(Arthur|Proper)P(is|VerbT)P(the|Det)P(king|Noun)P(.|Misc) 
-=(1/8)*(1/6)*(1/9)*(1/21)*(1/183)
+= (1/8)*(1/6)*(1/9)*(1/21)*(1/183)
 ```
 Parse:
 ```
 P(S2|ROOT)P(+Proper|S2)P(Proper +VerbT|+Proper)P(VerbT +Det|+VerbT)P(Det +Noun|+Det)P(Noun +Misc|+Noun)P(Misc|+Misc)
-=1*1/6*(1/7)^5
+= 1*1/6*(1/7)^5
 ```
 
 Therefore, this PCFG implements a bigram language model. 
